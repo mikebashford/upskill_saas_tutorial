@@ -1,9 +1,12 @@
 class PagesController < ApplicationController
-   def home
-   end
+  #GET reuqest for / which is our home page
+  def home
+    @basic_plan = Plan.find(1)
+    @pro_plan = Plan.find(2)
+  end
    
-   def about
-   end
+  def about
+  end
 end
 
     
